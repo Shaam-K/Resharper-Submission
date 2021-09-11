@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD app</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/table.css' %}">
+</head>
+<body>
+<h1 class="w3-center" style="font-family: 'Pontano Sans', sans-serif;">Django CRUD Application</h1>
+<div class="table-container">
+    <div class="box-1">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone No</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="box-2">
+        <p><button class="w3-btn w3-deep-purple w3-round-large" style="width: 10rem; height: 5rem;">
+            <span class="w3-badge w3-deep-purple" ><img src="{% static 'images/add.svg' %}" alt="plus" style="width: 3.5rem;"></span>
+            </button></p>
+    </div> 
+</div>
+</body>
+</html>
