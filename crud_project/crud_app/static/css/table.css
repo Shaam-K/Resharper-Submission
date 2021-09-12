@@ -1,7 +1,7 @@
 .styled-table {
     border-collapse: collapse;
     margin: auto;
-    margin-top: 11.25rem;
+    margin-top: 11.5rem;
     margin-left: 10rem;
     font-size: 0.9em;
     font-family: 'Pontano Sans', sans-serif;
@@ -50,6 +50,10 @@
     background-color: #f3f3f3;
 }
 
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #1667d1;
+}
+
 .table-container {
     display:flex;
 }
@@ -61,7 +65,7 @@
 
 .box-2 {
     flex: 1;
-    margin-top: 10.6rem;
+    margin-top: 10.4rem;
     margin-left: 10rem;
     width: 17.5rem;
     height: 7.5rem;
