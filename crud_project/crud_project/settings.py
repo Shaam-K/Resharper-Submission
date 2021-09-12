@@ -81,13 +81,14 @@ WSGI_APPLICATION = 'crud_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'DATABASE_NAME',
-        'USER': 'USERNAME',
-        'PASSWORD': 'PASSWORD',
-        'HOST': 'HOST_SETTING',
-        'PORT': 'PORT_NO',
+        'NAME': 'resharper_crud_database',
+        'USER': 'root',
+        'PASSWORD': 'arkrootmysql',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
+
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
