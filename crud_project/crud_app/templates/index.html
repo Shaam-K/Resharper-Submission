@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap" rel="stylesheet">
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/table.css' %}">
+    <script src="https://kit.fontawesome.com/eb87db986c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <h1 class="w3-center" style="font-family: 'Pontano Sans', sans-serif;">Django CRUD Application</h1>
@@ -25,17 +26,17 @@
                     <th>Actions</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="w3-large">
                 <tr>
                 <td>Abdul</td>
                 <td>Aziz</td>
                 <td>903491231</td>
                 <td>
                     <form name="edit_button" action="#"  style="display: inline-block; opacity: 0.7;">
-                        <input type="image" name="edit" src="{% static 'images/edit.svg' %}" alt="change" width="28" height="28">
+                        <input type="image" name="edit" src="{% static 'images/edit.svg' %}" alt="change" width="32" height="32">
                     </form>
                     <form name="delete_button" action="#" style="display: inline-block; opacity: 0.7;">
-                        <input type="image" name="delete" src="{% static 'images/trash.svg' %}" alt="dispose" width="28" height="28">
+                        <input type="image" name="delete" src="{% static 'images/trash.svg' %}" alt="dispose" width="32" height="32">
                     </form>
                 </td>
                 </tr>
@@ -43,11 +44,11 @@
         </table>
     </div>
     <div class="box-2" style="display: inline; float: right;">
-        <p><button id="myBtn" class="w3-btn w3-deep-purple w3-round-large" style="width: 7rem; height: 5.25rem;">
+        <p><button id="add_button" class="w3-btn w3-deep-purple w3-round-large" style="width: 7rem; height: 5.25rem;">
             <span class="w3-badge w3-deep-purple" ><img src="{% static 'images/add.svg' %}" alt="plus" style="width: 3.5rem;"></span>
             </button></p>
     
-        <div id="myModal" class="modal">
+        <div id="input_model" class="modal">
     
         <div class="modal-content">
         <div class="container">
@@ -61,8 +62,8 @@
           
               <label for="phone">Phone No</label>
               <input type="text" id="phone" name="phoneno" placeholder="Enter Phone no">
-              <button type="submit" class="btn">Save</button>
-              <span class="close"><button type="button" class="btn cancel" onclick="close()">Close</button></span>
+              <p class="w3-large"><button type="submit" class="btn_submit">Save <i class="fas fa-database" style="font-size:20px; margin-left:5px;"></i></button>
+              <span class="close"><button type="button" class="btn_cancel">Back <i class="fas fa-backspace" style="font-size:20px;"></i></button></span>
             </form>
           </div>
         </div>
@@ -73,9 +74,9 @@
 </body>
 <script>
     // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementById("input_model");
 
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("add_button");
 
 var span = document.getElementsByClassName("close")[0];
 
@@ -92,5 +93,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
 </script>
 </html>

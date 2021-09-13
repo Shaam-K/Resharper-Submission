@@ -56,6 +56,7 @@
 .table-container {
     display:flex;
     margin-top: 5rem;
+    margin-left: 4.25rem;
 }
 
 
@@ -178,9 +179,21 @@ input[type=text], select, textarea {
     padding: 20px;
   }
 
-.btn {
-    background-color: #04AA6D;
+.btn_submit {
     color: white;
+    background-color: #04AA6D;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    border-radius: 0.25rem;
+}
+
+.btn_cancel {
+    color: white;
+    background-color: red;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
@@ -189,8 +202,3 @@ input[type=text], select, textarea {
     opacity: 0.8;
     border-radius: 0.25rem;
   }
-
-.close .btn{
-    background-color: red;
-}
-  
