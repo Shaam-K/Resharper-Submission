@@ -52,16 +52,16 @@
     
         <div class="modal-content">
         <div class="container">
-            <form method="POST">
+            <form method="POST" id="form_id">
             {% csrf_token %}
               <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Enter First Name">
+              <input type="text" id="fname" name="first_name" placeholder="Enter First Name">
           
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Enter Last Name">
+              <input type="text" id="lname" name="last_name" placeholder="Enter Last Name">
           
               <label for="phone">Phone No</label>
-              <input type="text" id="phone" name="phoneno" placeholder="Enter Phone no">
+              <input type="text" id="phone" name="phone_no" placeholder="Enter Phone no">
               <p class="w3-large"><button type="submit" class="btn_submit">Save <i class="fas fa-database" style="font-size:20px; margin-left:5px;"></i></button>
               <span class="close"><button type="button" class="btn_cancel">Back <i class="fas fa-backspace" style="font-size:20px;"></i></button></span>
             </form>

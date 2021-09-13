@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from crud_app.views import homepage,mysql_data
+from crud_app.views import homepage,forms_edit
 urlpatterns = [
     path('', homepage),
-    path('', mysql_data),
+    path('form/',forms_edit, name="form_id"),
     path('admin/', admin.site.urls),
 ]
